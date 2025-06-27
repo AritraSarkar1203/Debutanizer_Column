@@ -1,46 +1,61 @@
-🚀 Debutanizer Soft Sensor using GNN and ANN
-This project implements a soft sensor model for a Debutanizer Column, comparing Graph Neural Networks (GNN) and Artificial Neural Networks (ANN) for predicting process variables. The project highlights how integrating process structure via GNN improves prediction performance over conventional ANN approaches.
+## 🚀 **Debutanizer Soft Sensor using GNN and ANN**
 
-✅ Combines Chemical Engineering process knowledge with cutting-edge AI techniques
+This project implements a **soft sensor model** for a **Debutanizer Column**, comparing **Graph Neural Networks (GNN)** and **Artificial Neural Networks (ANN)** for predicting process variables. The project highlights how integrating **process structure via GNN** improves prediction performance over conventional ANN approaches.
 
-🎯 Problem Statement
-Real-time measurement of critical quality variables inside industrial columns like the Debutanizer is expensive and often infeasible. Soft sensors leverage easily accessible process data (temperature, pressure, flow) to estimate these hard-to-measure properties.
+✅ Combines **Chemical Engineering process knowledge** with **cutting-edge AI techniques**
 
-This project develops:
+---
 
-✅ A GNN-based soft sensor incorporating process relationships via graph construction.
-✅ A standard ANN-based soft sensor serving as a baseline.
-✅ A direct performance comparison between the two approaches.
+## 🎯 **Problem Statement**
 
-⚙️ Technical Overview
-📊 Dataset
-Industrial-style Debutanizer Column Dataset
+Real-time measurement of critical quality variables inside industrial columns like the **Debutanizer** is expensive and often infeasible. **Soft sensors** leverage easily accessible process data such as:
 
-Features: Temperature, Pressure, Flow rates, etc.
+- **Temperature**
+- **Pressure**
+- **Flow rates**
 
-Target: Product composition or key quality variable
+to estimate these hard-to-measure properties.
 
-🧠 Models
-1. Graph Neural Network (GNN)
-Graph constructed using k-Nearest Neighbors (kNN) to capture process relationships.
+**This project develops:**
 
-2-layer Graph Convolutional Network (GCN) with ReLU activation.
+✅ A **GNN-based soft sensor** incorporating process relationships via graph construction  
+✅ A standard **ANN-based soft sensor** serving as a baseline  
+✅ A direct **performance comparison** between the two approaches  
 
-Implemented using PyTorch and PyTorch Geometric.
+---
 
-Models both feature dependencies and underlying structure of the process.
+## ⚙️ **Technical Overview**
 
-2. Artificial Neural Network (ANN)
-Fully Connected Feedforward Neural Network.
+### 📊 **Dataset**
 
-Baseline approach treating data points as independent.
+*Industrial-style Debutanizer Column Dataset*
 
-Implemented using PyTorch/Sklearn.
+- **Features:** Temperature, Pressure, Flow rates, etc.  
+- **Target:** Product composition or key quality variable  
 
-Lacks structural awareness of the process.
+---
 
-💡 Key Takeaways
-✅ GNN effectively captures complex process interactions beyond feature-only models.
-✅ Improved prediction accuracy makes GNN-based soft sensors promising for industrial deployment.
-✅ Demonstrates practical fusion of domain knowledge and modern machine learning.
+### 🧠 **Models**
+
+#### ✅ **1. Graph Neural Network (GNN)**
+
+- Graph constructed using **k-Nearest Neighbors (kNN)** to capture process relationships  
+- **2-layer Graph Convolutional Network (GCN)** with ReLU activation  
+- Implemented using **PyTorch** and **PyTorch Geometric**  
+- Models both **feature dependencies** and **underlying structure** of the process  
+
+#### ⚡ **2. Artificial Neural Network (ANN)**
+
+- Fully Connected **Feedforward Neural Network**  
+- Baseline approach treating data points as independent  
+- Implemented using **PyTorch/Sklearn**  
+- Lacks structural awareness of the process  
+
+---
+
+## 💡 **Key Takeaways**
+
+✅ GNN effectively captures complex process interactions beyond feature-only models  
+✅ Improved prediction accuracy makes GNN-based soft sensors promising for industrial deployment  
+✅ Demonstrates practical fusion of **domain knowledge** and **modern machine learning**  
 
